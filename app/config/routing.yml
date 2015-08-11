@@ -1,0 +1,3 @@
+etki_hamburgrouble:
+    resource: "@EtkiHamburgroubleBundle/Resources/config/routing.yml"
+    prefix:   /
