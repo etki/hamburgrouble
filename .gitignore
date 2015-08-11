@@ -12,3 +12,5 @@
 /composer.phar
 composer.lock
 .idea
+
+tests/_output/*
