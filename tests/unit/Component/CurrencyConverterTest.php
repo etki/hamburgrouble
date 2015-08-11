@@ -28,6 +28,8 @@ class CurrencyConverterTest extends Test
 
     /**
      * Stupid test!
+     * 
+     * @group non-invasive
      *
      * @return void
      * @since 0.1.0

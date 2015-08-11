@@ -6,6 +6,8 @@ use Symfony\Component\Filesystem\Filesystem;
 
 /**
  * Never throw tests on your real filesystem, kids. Use VFS for that.
+ * 
+ * @group invasive
  *
  * @version 0.1.0
  * @since   0.1.0
