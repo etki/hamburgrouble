@@ -2,10 +2,8 @@ actor: Tester
 include:
   - src/*Bundle
 paths:
-  log: tests/_output
-  data: tests/_data
-  support: tests/_support
-  envs: tests/_envs
+  log: tests/Output
+  data: tests/Data
 settings:
   bootstrap: _bootstrap.php
   colors: true
