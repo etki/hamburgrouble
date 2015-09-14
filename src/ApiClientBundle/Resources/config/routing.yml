@@ -1,0 +1,3 @@
+hamburgrouble_api_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: HamburgroubleApiBundle:Default:index }

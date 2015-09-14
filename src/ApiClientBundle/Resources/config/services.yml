@@ -1,0 +1,4 @@
+services:
+#    hamburgrouble_api.example:
+#        class: Etki\Projects\Hamburgrouble\ApiClientBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
