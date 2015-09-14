@@ -1,0 +1,22 @@
+# Cache
+app/cache
+
+# Composer deps
+bin/*
+vendor
+composer.lock
+
+# Testing grounds
+tests
+**/Tests
+**/codeception.yml
+
+# Frontend building area
+build
+node_modules
+bower_components
+
+# Misc files
+resources
+LICENSE
+README.md

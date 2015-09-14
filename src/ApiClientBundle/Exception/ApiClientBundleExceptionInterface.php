@@ -10,7 +10,7 @@ namespace Etki\Projects\Hamburgrouble\ApiClientBundle\Exception;
  * @package Etki\Projects\Hamburgrouble\ApiClientBundle\Exception
  * @author  Etki <etki@etki.name>
  */
-interface ApiBundleExceptionInterface
+interface ApiClientBundleExceptionInterface
 {
 
 }

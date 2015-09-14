@@ -1,0 +1,10 @@
+FROM php:5.6-fpm
+MAINTAINER Etki <etki@etki.name>
+
+ENV APPLICATION_DIR=/var/hamburgrouble
+
+RUN apt-get update -y && apt-get install -y libzip-dev libpq-dev
+RUN docker-php-ext-install zip mbstring pdo_pgsql
+
+ADD . $APPLICATION_DIR
+WORKDIR $APPLICATION_DIR

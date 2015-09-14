@@ -1,0 +1,25 @@
+{
+  "name": "hamburgrouble",
+  "version": "0.1.0",
+  "authors": [
+    "Etki <etki@etki.name>"
+  ],
+  "description": "didn't mean to tell you, but i guess you;ve got to know",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "hamburger",
+    "rouble"
+  ],
+  "license": "MIT",
+  "homepage": "hamburgrouble.etki.name",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

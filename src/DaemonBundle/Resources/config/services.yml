@@ -1,4 +1,14 @@
 services:
-#    hamburgrouble_daemon.example:
-#        class: Etki\Projects\Hamburgrouble\DaemonBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+  etki.hamburgrouble.daemon.data_loader:
+    class: Etki\Projects\Hamburgrouble\DaemonBundle\Service\DataLoader\DataLoader
+  etki.hamburgrouble.daemon.data_load_task:
+    class: Etki\Projects\Hamburgrouble\DaemonBundle\Service\DataLoader\DataLoadTask
+    arguments: [ @etki.hamburgrouble.daemon.data_loader, @logger]
+  etki.hamburgrouble.daemon.data_load_task_interval:
+    class: DateInterval
+    arguments: [ %hamburgrouble.data_load_interval% ]
+  etki.hamburgrouble.daemon.scheduler:
+    class: Etki\Projects\Hamburgrouble\DaemonBundle\Service\Scheduler\Scheduler
+    arguments: [ @logger ]
+    calls:
+      - [ addRecurrentTask, [ @etki.hamburgrouble.daemon.data_load_task, @etki.hamburgrouble.daemon.data_load_task_interval ] ]

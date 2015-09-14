@@ -1,0 +1,17 @@
+FROM php:5.6
+MAINTAINER Etki <etki@etki.name>
+
+ENV APPLICATION_DIR=/var/hamburgrouble
+
+RUN apt-get update -y && apt-get install -y libzip-dev libpq-dev
+RUN docker-php-ext-install zip mbstring pdo_pgsql
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+ADD . $APPLICATION_DIR
+
+WORKDIR $APPLICATION_DIR
+
+RUN composer install
+
+ENTRYPOINT ["/usr/local/bin/php", "$APPLICATION_DIR/bin/console"]
+CMD ["daemon", "-vvv"]

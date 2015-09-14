@@ -11,7 +11,7 @@ namespace Etki\Projects\Hamburgrouble\ApiClientBundle\Exception;
  * @package Etki\Projects\Hamburgrouble\ApiClientBundle\Exception
  * @author  Etki <etki@etki.name>
  */
-class InvalidResponseException extends ApiException
+class InvalidResponseException extends ApiClientException
 {
 
 }

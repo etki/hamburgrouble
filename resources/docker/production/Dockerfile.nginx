@@ -1,0 +1,4 @@
+FROM nginx
+MAINTAINER Etki <etki@etki.name>
+
+ADD nginx/host.conf /etc/nginx/default.conf

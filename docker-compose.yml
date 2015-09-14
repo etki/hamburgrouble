@@ -1,0 +1,26 @@
+proxy:
+  build: .
+  dockerfile_path: resources/docker/Dockerfile.nginx
+  ports:
+    - 9723:80
+daemon:
+  build: .
+  dockerfile_path: resources/docker/Dockerfile.daemon
+backend:
+  build: .
+  dockerfile_path: resources/docker/Dockerfile.fpm
+  environment:
+    SERVICE_DATABASE_HOST: database
+    SERVICE_DATABASE_DRIVER: pdo_pgsql
+    SERVICE_DATABASE_PORT: 5432
+    SERVICE_DATABASE_NAME: hamburgrouble
+    SERVICE_DATABASE_USER: hamburgrouble
+    SERVICE_DATABASE_PASSWORD: hamburgrouble
+frontend:
+  build: .
+  dockerfile_path: resources/docker/Dockerfile.node
+database:
+  image: postgres:9.5
+  environment:
+    POSTGRES_USER: hamburgrouble
+    POSTGRES_PASSWORD: hamburgrouble

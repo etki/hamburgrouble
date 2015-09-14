@@ -1,0 +1,15 @@
+FROM node
+MAINTAINER Etki <etki@etki.name>
+
+ENV APPLICATION_DIR=/var/hamburgrouble
+
+ADD . $APPLICATION_DIR
+WORKDIR $APPLICATION_DIR
+
+RUN npm i -g gulp bower http-server
+RUN npm i
+RUN bower i
+RUN gulp
+
+ENTRYPOINT ["http-server"]
+CMD ["$APPLICATION_DIR/frontend/build"]

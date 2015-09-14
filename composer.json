@@ -60,7 +60,16 @@
     "symfony-web-dir": "web",
     "symfony-assets-install": "relative",
     "incenteev-parameters": {
-      "file": "app/config/parameters.yml"
+      "file": "app/config/parameters.yml",
+      "env-map": {
+        "service.database.driver": "SERVICE_DATABASE_DRIVER",
+        "service.database.host": "SERVICE_DATABASE_HOST",
+        "service.database.port": "SERVICE_DATABASE_PORT",
+        "service.database.name": "SERVICE_DATABASE_NAME",
+        "service.database.user": "SERVICE_DATABASE_USER",
+        "service.database.password": "SERVICE_DATABASE_PASSWORD",
+        "symfony.secret": "SYMFONY_SECRET"
+      }
     },
     "branch-alias": {
       "dev-master": "2.7-dev"

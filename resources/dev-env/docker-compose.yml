@@ -1,0 +1,5 @@
+fpm:
+cron:
+nginx:
+postgresql:
+  image: postgres:9.5

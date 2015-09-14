@@ -13,4 +13,5 @@
 composer.lock
 .idea
 
-tests/_output/*
+node_modules
+bower_components

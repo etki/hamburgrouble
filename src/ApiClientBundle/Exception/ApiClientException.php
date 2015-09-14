@@ -12,8 +12,8 @@ use RuntimeException;
  * @package Etki\Projects\Hamburgrouble\ApiClientBundle\Exception
  * @author  Etki <etki@etki.name>
  */
-class ApiException extends RuntimeException implements
-    ApiBundleExceptionInterface
+class ApiClientException extends RuntimeException implements
+    ApiClientBundleExceptionInterface
 {
 
 }
