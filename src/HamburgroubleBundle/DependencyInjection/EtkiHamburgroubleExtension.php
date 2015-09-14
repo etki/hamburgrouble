@@ -1,6 +1,6 @@
 <?php
 
-namespace Etki\HamburgroubleBundle\DependencyInjection;
+namespace Etki\Projects\Hamburgrouble\HamburgroubleBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

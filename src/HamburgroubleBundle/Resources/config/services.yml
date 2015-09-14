@@ -1,0 +1,10 @@
+services:
+  etki.hamburgrouble.data_fetcher:
+    class: Etki\Projects\Hamburgrouble\HamburgroubleBundle\Service\DataFetchService
+    arguments:
+      - @doctrine.orm.default_entity_manager
+      - @logger
+  etki.hamburgrouble.data_loader:
+    class: Etki\Projects\Hamburgrouble\HamburgroubleBundle\Service\DataService
+    arguments:
+      - @doctrine.orm.default_entity_manager

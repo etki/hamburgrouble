@@ -1,0 +1,4 @@
+services:
+#    hamburgrouble_daemon.example:
+#        class: Etki\Projects\Hamburgrouble\DaemonBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

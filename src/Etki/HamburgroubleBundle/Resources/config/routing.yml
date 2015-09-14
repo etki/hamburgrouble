@@ -1,3 +1,0 @@
-etki_hamburgrouble_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: EtkiHamburgroubleBundle:Default:index }

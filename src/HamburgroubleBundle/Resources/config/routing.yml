@@ -1,0 +1,3 @@
+etki_hamburgrouble_homepage:
+    path:     /
+    defaults: { _controller: EtkiHamburgroubleBundle:Master:index }

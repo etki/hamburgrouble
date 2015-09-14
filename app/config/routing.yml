@@ -1,3 +1,7 @@
+hamburgrouble_api_client:
+    resource: "@HamburgroubleApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
 etki_hamburgrouble:
     resource: "@EtkiHamburgroubleBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /api/v1

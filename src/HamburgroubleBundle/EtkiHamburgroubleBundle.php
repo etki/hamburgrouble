@@ -1,6 +1,6 @@
 <?php
 
-namespace Etki\HamburgroubleBundle;
+namespace Etki\Projects\Hamburgrouble\HamburgroubleBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
